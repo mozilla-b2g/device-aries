@@ -26,7 +26,7 @@
 /**
  * Device specific configuration
  */
-#define BTM_DEF_LOCAL_NAME   "XperiaZ2"
+#define BTM_DEF_LOCAL_NAME   "Xperia Z3 Compact"
 #define BTA_DISABLE_DELAY 100 /* in milliseconds */
 
 #endif

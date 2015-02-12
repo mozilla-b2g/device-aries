@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE=shinano
+DEVICE=aries
 MANUFACTURER=sony
 
 if [[ -z "${ANDROIDFS_DIR}" ]]; then
@@ -275,6 +275,10 @@ COMMON_LIBS="
 	libmedia.so
 	libdisplayservice.so
 	libsomc_thermal.so
+	librilutils.so
+	libril.so
+	libnfc-nci.so
+	libnfc_ndef.so
 	"
 
 copy_files "$COMMON_LIBS" "system/lib" ""
@@ -377,7 +381,6 @@ COMMON_ETC="
 	gps.conf
 	lowi.conf
 	media_codecs.xml
-	media_profiles.xml
 	mixer_paths.xml
 	mixer_paths_auxpcm.xml
 	xtwifi.conf
@@ -388,7 +391,8 @@ COMMON_ETC="
 	sec_config
 	sensor_def_qcomdev.conf
 	ramdump_ssr.xml
-	simple_thermal_monitor.cfg
+	libnfc-brcm.conf
+	libnfc-nxp.conf
 	"
 copy_files "$COMMON_ETC" "system/etc" "etc"
 
