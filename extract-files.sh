@@ -18,3 +18,21 @@ DEVICE=aries
 MANUFACTURER=sony
 
 . ../shinano-common/extract-files.sh
+
+ARIES_FIRMWARE_CLEARPAD="
+	touch_module_id_0x82.img
+	touch_module_id_0x84.img
+	touch_module_id_0x85.img
+	touch_module_id_0x87.img
+	touch_module_id_0x88.img
+	touch_module_id_0x89.img
+	touch_module_id_0x8a.img
+	touch_module_id_0x8c.img
+	touch_module_id_0x8d.img
+	touch_module_id_0x8e.img
+	touch_module_id_0x92.img
+	touch_module_id_0x93.img
+	touch_module_id_0x94.img
+	"
+
+copy_files "$ARIES_FIRMWARE_CLEARPAD" "system/etc/firmware" "etc/firmware"
