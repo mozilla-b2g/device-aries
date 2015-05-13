@@ -1,5 +1,7 @@
+TARGET_DEVICE_BLOBS := vendor/sony/aries/aries-vendor-blobs.mk
+
 $(call inherit-product-if-exists, device/sony/shinano-common/device.mk)
-$(call inherit-product-if-exists, vendor/sony/aries/aries-vendor-blobs.mk)
+$(call inherit-product-if-exists, $(TARGET_DEVICE_BLOBS))
 
 # for Gecko
 PRODUCT_PROPERTY_OVERRIDES += \
